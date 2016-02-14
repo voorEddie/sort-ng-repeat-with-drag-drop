@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Sort AngularJS ng-repeat with HTML5 drag & drop API</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<h1>Sort AngularJS ng-repeat with HTML5 drag & drop API</h1>
+<div ng-controller="DemoController as vm">
+    <ol>
+        <li class="demo-item"
+            data-drag-sort
+            draggable="true"
+            data-index="{{$index}}"
+            data-list="vm.someWrapperObj.itemList"
+            ng-repeat="item in vm.someWrapperObj.itemList track by $index">{{item.name}}</li>
+    </ol>
+    <hr>
+    <h2>List in vm:</h2>
+    {{vm.someWrapperObj.itemList}}
+</div>
+<!--load bower dependencies-->
+<script src="bower_components/angularjs/angular.js"></script>
+<!--load angular module, config-->
+<script src="module/module.js"></script>
+<script src="directive/data-drag-sort.js"></script>
+<script src="module/demo/demo.controller.js"></script>
+</body>
+</html>

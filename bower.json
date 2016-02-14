@@ -1,0 +1,7 @@
+{
+  "name": "sort-ng-repeat-with-drag-drop",
+  "dependencies": {
+    "angularjs": "1.4.8",
+    "normalize.css": "^3.0.3"
+  }
+}

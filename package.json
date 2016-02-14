@@ -1,0 +1,20 @@
+{
+  "name": "sort-ng-repeat-with-drag-drop",
+  "version": "1.0.0",
+  "description": "Sort ng-repeat items with HTML5 drag & drop API",
+  "keywords": [
+    "AngularJS",
+    "drag",
+    "drop",
+    "sort"
+  ],
+  "author": "Eddie Wang",
+  "license": "ISC",
+  "scripts": {
+    "start": "http-server -a localhost -p 8001 -o"
+  },
+  "devDependencies": {
+    "http-server": "latest",
+    "bower": "latest"
+  }
+}
